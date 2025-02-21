@@ -1,0 +1,41 @@
+Explanation and How to Compile/Run:
+
+Includes:
+
+stdio.h: Provides standard input/output functions like printf and scanf.
+stdlib.h: Provides general utility functions (not strictly needed for this basic example, but good practice to include if you might use functions like exit() later).
+main() function:
+
+The heart of the program.
+
+Variables:
+choice: Stores the user's menu selection (integer).
+num1, num2: Store the two numbers the user will input (floats for potential decimal values).
+result: Stores the result of the calculation (float).
+
+do...while loop:
+This loop ensures the menu is displayed and the program continues to run until the user chooses to exit (choice 5).
+Menu Display:
+
+printf is used to display the menu options to the user
+
+User Input:
+scanf reads the user's choice and stores it in the choice variable
+
+switch statement:
+This controls the program flow based on the user's choice.
+Each case corresponds to a menu option.
+The code within each case performs the appropriate calculation.
+Important: The break statement at the end of each case is crucial. It prevents the code from "falling through" to the next case.
+default: Handles invalid choices (anything other than 1-5).
+
+Calculations:
+The code within each case performs the arithmetic operation (+, -, *, /).
+Division by Zero Check:
+
+In the division case, there's a check to prevent division by zero, which would cause an error.
+Output:
+
+printf displays the result of the calculation, formatted to two decimal places (%.2f).
+Exit Condition:
+When the user chooses option 5, the do...while loop terminates, and the program ends.
